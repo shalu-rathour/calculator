@@ -1,0 +1,61 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: cursive;
+}
+body {
+  background-color: azure;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.frame {
+  height: 750px;
+  width: 500px;
+  background-color: white;
+  box-shadow: 5px 5px 15px black;
+}
+#para {
+  padding: 20px;
+  text-align: center;
+  text-shadow: 5px 5px 10px black;
+  font-size: 40px;
+  color: rgb(12, 103, 184);
+}
+#block {
+  height: 190px;
+  width: 100%;
+  border: solid transparent;
+  box-shadow: inset 5px 5px 5px rgb(12, 185, 142),
+    inset -5px -5px 5px rgb(12, 185, 142);
+  box-sizing: border-box;
+  font-size: 50px;
+  text-align: right;
+  padding: 10px;
+}
+.btn-grp {
+  display: flex;
+  justify-content: space-around;
+}
+.btn {
+  border-radius: 40%;
+  height: 68px;
+  width: 68px;
+  box-shadow: 5px 5px 5px blueviolet, -5px -5px 5px blueviolet;
+  font-size: 30px;
+  background-color: blanchedalmond;
+}
+.btn:hover {
+  background-color: red;
+  cursor: pointer;
+}
+#AC {
+  background-color: grey;
+}
+#DE {
+  background-color: grey;
+}
+#eq {
+  background-color: grey;
+}

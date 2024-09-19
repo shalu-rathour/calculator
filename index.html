@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="frame">
+      <div id="para">Calculator</div>
+      <div class="block">
+        <input type="text" name="" id="block" disabled />
+      </div>
+      <br />
+      <div class="btn-grp">
+        <input
+          id="AC"
+          type="button"
+          class="btn"
+          value="AC"
+          onclick="block.value=' ' "
+        />
+        <input
+          type="button"
+          class="btn"
+          value=" . "
+          onclick="block.value+= '.' "
+        />
+        <input
+          type="button"
+          class="btn"
+          value="%"
+          onclick="block.value+='%' "
+        />
+        <input
+          type="button"
+          class="btn"
+          value="/"
+          onclick="block.value+='/' "
+        />
+      </div>
+      <br />
+      <div class="btn-grp">
+        <input
+          type="button"
+          class="btn"
+          value="7"
+          onclick="block.value+='7' "
+        />
+        <input
+          type="button"
+          class="btn"
+          value="8"
+          onclick="block.value+='8' "
+        />
+        <input
+          type="button"
+          class="btn"
+          value="9"
+          onclick="block.value+='9' "
+        />
+        <input
+          type="button"
+          class="btn"
+          value="*"
+          onclick="block.value+='*' "
+        />
+      </div>
+      <br />
+      <div class="btn-grp">
+        <input
+          type="button"
+          class="btn"
+          value="4"
+          onclick="block.value+='4' "
+        />
+        <input
+          type="button"
+          class="btn"
+          value="5"
+          onclick="block.value+='5' "
+        />
+        <input
+          type="button"
+          class="btn"
+          value="6"
+          onclick="block.value+='6' "
+        />
+        <input
+          type="button"
+          class="btn"
+          value="-"
+          onclick="block.value+='-' "
+        />
+      </div>
+      <br />
+      <div class="btn-grp">
+        <input
+          type="button"
+          class="btn"
+          value="1"
+          onclick="block.value+='1' "
+        />
+        <input
+          type="button"
+          class="btn"
+          value="2"
+          onclick="block.value+='2' "
+        />
+        <input
+          type="button"
+          class="btn"
+          value="3"
+          onclick="block.value+='3' "
+        />
+        <input
+          type="button"
+          class="btn"
+          value="+"
+          onclick="block.value+='+' "
+        />
+      </div>
+      <br />
+      <div class="btn-grp">
+        <input
+          type="button"
+          class="btn"
+          value="0"
+          onclick="block.value+='0' "
+        />
+        <input
+          type="button"
+          class="btn"
+          value="00"
+          onclick="block.value+='00' "
+        />
+        <input
+          id="DE"
+          type="button"
+          class="btn"
+          value=" DE"
+          onclick="block.value= block.value.toString().slice(0,-1)"
+        />
+
+        <input
+          id="eq"
+          type="button"
+          class="btn"
+          value="="
+          onclick="block.value = eval(block.value)"
+        />
+      </div>
+    </div>
+  </body>
+</html>
